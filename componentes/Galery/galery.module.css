@@ -1,0 +1,17 @@
+.p {
+  color: #9ba4b5;
+  font-size: 4em;
+  justify-content: center;
+  display: flex;
+
+  /* Media query para pantallas de hasta 768px (celulares) */
+  @media (max-width: 768px) {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  /* Media query para pantallas entre 768px y 1024px (tablets) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 3em;
+  }
+}

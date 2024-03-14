@@ -1,18 +1,15 @@
-"use client";
-
+import { Nav } from "@/componentes/Nav";
 import styles from "./page.module.css";
+import Galery from "@/componentes/Galery/galery";
+import Stack from "@/componentes/stack/stack";
 
-import { NextUIProvider } from "@nextui-org/react"; // Install and correct path
-
-export default function Home({ children }) {
+export default function Home() {
   return (
-    <NextUIProvider>
-      <NextThemesProvider attribute="class" defaultTheme="dark">
-        {children}
-        <main className={styles.main}>
-          <div className={styles.description}></div>
-        </main>
-      </NextThemesProvider>
-    </NextUIProvider>
+    <main className={styles.main}>
+      <div className={styles.description}></div>
+      <Nav />
+      <Stack />
+      <Galery />
+    </main>
   );
 }

@@ -1,0 +1,42 @@
+.nav {
+  /* Styles for the header element: */
+  position: fixed; /* Make the header fixed to the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Span the entire width */
+  height: 100px; /* Adjust the height as needed */
+  background-color: #fff; /* Set background color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  display: flex; /* Allow horizontal layout of logo and text */
+  align-items: center; /* Align content vertically */
+  justify-content: space-between; /* Distribute content horizontally with spacing */
+  padding: 0 20px; /* Add padding for elements */
+  z-index: 10; /* Ensure the header stays above other elements */
+}
+
+.container {
+  /* Styles for the container div: */
+  display: flex; /* Allow horizontal layout of logo and text */
+  align-items: center; /* Align content vertically */
+}
+
+.nav-logo {
+  /* Styles for the logo image */
+  top: 20px;
+  margin: 0 20px, 20px;
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navText {
+  /* Styles for the text content */
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold; /* Optional bold text */
+  margin-left: 20px; /* Add spacing between logo and text */
+}
+
+.nav-updated {
+  /* Styles for the last updated information */
+  font-size: 12px; /* Adjust the font size as needed */
+  color: #ccc; /* Optional light gray color */
+}

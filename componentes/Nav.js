@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import VerticalLinearStepper from "./about/about";
 
 export const Nav = () => {
   return (
@@ -41,6 +42,7 @@ export const Nav = () => {
             </h3>
 
             <p class="card-text"></p>
+            <VerticalLinearStepper />
           </div>
         </div>
       </div>

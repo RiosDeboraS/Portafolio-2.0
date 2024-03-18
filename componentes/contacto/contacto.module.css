@@ -1,0 +1,30 @@
+.div {
+  margin: 50px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+
+  background-color: rgba(137, 43, 226, 0);
+}
+
+.botones {
+  background-color: #c1ece4;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  margin: 10px 10px 10px;
+  transition: box-shadow 0.3s ease;
+  border: none;
+}
+
+.botones:hover {
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.93); /* Iluminar el borde al pasar el cursor */
+}

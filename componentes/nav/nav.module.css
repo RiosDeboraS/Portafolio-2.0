@@ -1,0 +1,29 @@
+.avatar {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.h2 {
+  margin-top: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: azure;
+}
+
+/* Media query para pantallas de hasta 414px (iPhone XR) */
+@media (max-width: 414px) {
+  .avatar {
+    max-width: 100%; /* Ocupa todo el ancho de la pantalla */
+    margin: 0 auto;
+  }
+}
+/* Media query para pantallas de hasta 768px (celulares) */
+@media (max-width: 768px) {
+  .avatar {
+    max-width: 100%; /* Ocupa todo el ancho de la pantalla */
+  }
+}

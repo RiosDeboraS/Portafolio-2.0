@@ -1,0 +1,23 @@
+.boton {
+  background-color: #c1ece4;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+
+  transition: box-shadow 0.3s ease;
+  border: none;
+}
+.boton:hover {
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.93); /* Iluminar el borde al pasar el cursor */
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+}

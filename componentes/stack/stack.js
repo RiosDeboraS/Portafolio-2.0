@@ -17,6 +17,7 @@ export default function LabTabs() {
 
   return (
     <Box
+      className={style.stack}
       sx={{
         width: "100%",
         typography: "body1",
@@ -25,7 +26,7 @@ export default function LabTabs() {
         background: "#b5c0d0",
       }}
     >
-      <TabContext value={value}>
+      <TabContext value={value} className={style.stack}>
         <Box sx={{ borderBottom: 2, borderColor: "#F1F6F9" }}>
           <TabList onChange={handleChange}>
             <Tab
@@ -40,7 +41,7 @@ export default function LabTabs() {
             />
           </TabList>
         </Box>
-        <TabPanel value="2">
+        <TabPanel className={style.stack} value="2">
           <img className={style.img} src="/icons8-expresar-js-50.png"></img>
           <img className={style.img} src="/icons8-rápidamente-48.png"></img>
           <img className={style.img} src="/icons8-siguientejs-48.png"></img>
@@ -77,7 +78,7 @@ export default function LabTabs() {
             src="https://skillicons.dev/icons?i=windows,notion,nodejs,idea,css,html"
           />
         </TabPanel>
-        <TabPanel value="1"></TabPanel>
+        <TabPanel className={style.stack} b value="1"></TabPanel>
       </TabContext>
     </Box>
   );

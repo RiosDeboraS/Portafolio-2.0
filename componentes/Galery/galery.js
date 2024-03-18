@@ -7,9 +7,10 @@ import style from "./galery.module.css";
 
 export default function Galery() {
   return (
-    <div>
+    <div className={style.Galery}>
       <p className={style.p}> Proyect Galery</p>
       <Box
+        className={style.Galery}
         sx={{
           display: "flex",
           justifyContent: "center",

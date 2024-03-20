@@ -4,6 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InboxIcon from "@mui/icons-material/Inbox";
 import Avatar from "@mui/material/Avatar";
+import style from "../contacto/contacto.module.css";
 
 export const Animacion = () => {
   return (
@@ -38,7 +39,7 @@ export const Animacion = () => {
                   <div class="card__column">
                     <div class="card__avatar">
                       <a href="https://www.linkedin.com/in/debora-sabrina-rios-fullstack/">
-                        <button>
+                        <button className={style.botones}>
                           <LinkedInIcon></LinkedInIcon>
                         </button>
                       </a>
@@ -56,7 +57,7 @@ export const Animacion = () => {
                   <div class="card__column">
                     <div class="card__avatar">
                       <a href="https://github.com/RiosDeboraS">
-                        <button>
+                        <button className={style.botones}>
                           <GitHubIcon></GitHubIcon>
                         </button>
                       </a>
@@ -74,7 +75,7 @@ export const Animacion = () => {
                   <div class="card__column">
                     <div class="card__avatar">
                       <a href="mailto:Riosdeborasabrina@gmail.com">
-                        <button>
+                        <button className={style.botones}>
                           <InboxIcon></InboxIcon>
                         </button>
                       </a>
@@ -92,7 +93,7 @@ export const Animacion = () => {
                   <div class="card__column">
                     <div class="card__avatar">
                       <a href="https://www.linkedin.com/in/debora-sabrina-rios-fullstack/">
-                        <button>
+                        <button className={style.botones}>
                           <LinkedInIcon></LinkedInIcon>
                         </button>
                       </a>
@@ -137,9 +138,7 @@ export const Animacion = () => {
         </div>
       </header>
       <main>
-        <section>
-          <SizeAvatars />
-        </section>
+        <section></section>
       </main>
     </div>
   );

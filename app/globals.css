@@ -5,10 +5,10 @@
 }
 
 :root {
-  --border: hsl(0 0% 80%);
+  --border: hsl(289, 71%, 85%);
   --card: hsl(0 0% 98%);
   --element: hsl(0 0% 90%);
-  --accent: hsl(240 38% 60%);
+  --accent: hsl(319, 24%, 57%);
   --panel: hsl(240 38% 98%);
 }
 
@@ -26,7 +26,7 @@ body {
 
 body::before {
   --size: 60px;
-  --line: hsl(0 0% 0% / 0.15);
+  --line: hsla(277, 86%, 28%, 0.15);
   content: "";
   height: 100vh;
   width: 100vw;

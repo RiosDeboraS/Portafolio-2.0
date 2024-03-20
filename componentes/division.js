@@ -4,7 +4,7 @@ const Divider = () => {
       style={{
         width: "100%",
         height: "1px",
-        backgroundColor: "white",
+        backgroundColor: "black",
         margin: "10px 0",
       }}
     />

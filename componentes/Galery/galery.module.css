@@ -4,7 +4,7 @@
 }
 
 /* Media query para pantallas de hasta 768px (celulares) */
-@media (max-width: 768px) {
+@media (max-width: 414px) {
   .Galery {
     max-width: 100%; /* Ocupa todo el ancho de la pantalla */
   }

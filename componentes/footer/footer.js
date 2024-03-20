@@ -5,8 +5,8 @@ export const Footer = () => {
     <footer className={style.footer}>
       <div>
         <p>
-          © 2024 Debora Rios. Todos los derechos reservados. | Desarrolladora
-          Full Stack 💜| Argentina 📌🙋‍♀️
+          ʕ•ᴥ•ʔ © 2024 Debora Rios. Todos los derechos reservados. |
+          Desarrolladora Full Stack 💜| Argentina 📌🙋‍♀️
         </p>
       </div>
     </footer>

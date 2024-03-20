@@ -1,3 +1,13 @@
 .footer {
   color: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+@media (max-width: 414px) {
+  .footer {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
 }

@@ -7,18 +7,14 @@ import style from "./galery.module.css";
 
 export default function Galery() {
   return (
-    <div className={style.Galery}>
-      <p className={style.p}> Proyect Galery</p>
+    <div>
       <Box
-        className={style.Galery}
         sx={{
           display: "flex",
           justifyContent: "center",
-          marginTop: "100px",
-          color: "#9BA4B5",
-          width: 900,
+          alignItems: "center",
 
-          height: 750,
+          color: "#9BA4B5",
         }}
       >
         <ImageList variant="masonry" cols={3} gap={8}>

@@ -2,8 +2,8 @@
   justify-content: center;
   display: flex;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
 
 .h2 {
@@ -11,7 +11,7 @@
   justify-content: center;
   display: flex;
   align-items: center;
-  color: azure;
+  color: rgb(9, 10, 10);
 }
 
 /* Media query para pantallas de hasta 414px (iPhone XR) */

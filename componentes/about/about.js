@@ -41,21 +41,21 @@ export default function VerticalLinearStepper() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, color: "white" }}>
+    <Box sx={{ maxWidth: 400, color: "black" }}>
       <Stepper
-        sx={{ color: "white" }}
+        sx={{ color: "black" }}
         activeStep={activeStep}
         orientation="vertical"
         style={{ color: "#F7EFE5" }}
       >
         {steps.map((step, index) => (
-          <Step sx={{ color: "white" }} key={step.label}>
+          <Step sx={{ color: "black" }} key={step.label}>
             <StepLabel
-              style={{ color: "white", background: "#b5c0d0" }}
+              style={{ color: "black", background: "#b5c0d0" }}
               optional={
                 index === 2 ? (
                   <Typography
-                    style={{ color: "white" }}
+                    style={{ color: "black" }}
                     variant="caption"
                   ></Typography>
                 ) : null
@@ -63,8 +63,8 @@ export default function VerticalLinearStepper() {
             >
               {step.label}
             </StepLabel>
-            <StepContent style={{ color: "white" }}>
-              <Typography style={{ color: "white" }}>
+            <StepContent style={{ color: "black" }}>
+              <Typography style={{ color: "black" }}>
                 {step.description}
               </Typography>
 
@@ -73,7 +73,7 @@ export default function VerticalLinearStepper() {
                   variant="contained"
                   onClick={handleNext}
                   sx={{ mt: 1, mr: 1, borderRadius: "50px" }}
-                  style={{ color: "white" }}
+                  style={{ color: "black" }}
                 >
                   {index === steps.length - 1 ? "Finish" : "Continue"}
                 </Button>

@@ -110,36 +110,12 @@ export const Animacion = () => {
           </div>
         </div>
 
-        {/*circulo*/}
-
         <div class="scroller">
           <div class="content">
-            <div class="panel">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
+            <div class="panel"></div>
           </div>
         </div>
-        <div class="ring ring--under">
-          <img
-            src="https://assets.codepen.io/605876/portal-ring.png?format=auto&quality=2"
-            alt=""
-          />
-        </div>
-        <div class="ring ring--over">
-          <img
-            src="https://assets.codepen.io/605876/portal-ring.png?format=auto&quality=2"
-            alt=""
-          />
-        </div>
       </header>
-      <main>
-        <section></section>
-      </main>
     </div>
   );
 };

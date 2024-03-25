@@ -7,6 +7,10 @@ export default function app() {
     <div>
       <Animacion />
       <Carousel />
+      <br />
+      <br />
+      <br />
+      <br />
       <Footer />
     </div>
   );

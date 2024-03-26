@@ -5,11 +5,11 @@
 }
 
 :root {
-  --border: hsl(289, 71%, 85%);
-  --card: hsl(0 0% 98%);
-  --element: hsl(0 0% 90%);
-  --accent: hsl(319, 24%, 57%);
-  --panel: hsl(240 38% 98%);
+  --border: hsl(30, 11%, 96%);
+  --card: hsla(0, 0%, 3%, 0.888);
+  --element: linear-gradient(to bottom, #f4ebe8, #080808);
+  --accent: hsl(0, 67%, 98%);
+  --panel: hsl(240, 40%, 98%);
 }
 
 html {
@@ -17,21 +17,13 @@ html {
 }
 
 body::before {
-  --size: 60px;
-  --line: hsla(277, 86%, 28%, 0.15);
+  --size: 10px;
+
   content: "";
-  /* height: 100vh;
-  width: 100vw; */
+
   position: fixed;
-  background: linear-gradient(
-        90deg,
-        var(--line) 1px,
-        transparent 1px var(--size)
-      )
-      50% 50% / var(--size) var(--size),
-    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
-      var(--size) var(--size);
-  mask: linear-gradient(-15deg, transparent 30%, white);
+
+  mask: linear-gradient(-15deg, transparent 30%, rgba(255, 255, 255, 0));
   top: 0;
   transform-style: flat;
   pointer-events: none;
@@ -39,7 +31,7 @@ body::before {
 }
 
 header {
-  min-height: 200vh;
+  min-height: 100px;
   position: relative;
   width: 100%;
 }
@@ -82,7 +74,7 @@ nav button {
   top: 0;
   left: 0;
   right: 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100vw;
   display: grid;
   place-items: center;
@@ -106,7 +98,7 @@ nav button {
 
 .scroller {
   position: relative;
-  min-height: 200vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -163,7 +155,7 @@ nav button {
   gap: 1rem;
   text-align: center;
   padding: 2rem;
-
+  margin: 0 20px 20px;
   box-shadow: 0 32px 32px rgba(23, 22, 24, 0.04),
     0 16px 16px rgba(23, 22, 24, 0.04), 0 8px 8px rgba(23, 22, 24, 0.04);
 }
@@ -195,6 +187,7 @@ main {
   background: transparent;
   box-shadow: none;
 }
+
 @media (max-width: 414px) {
   body {
     font-size: 14px;
@@ -280,6 +273,7 @@ main {
 .card--two .card__column:first-of-type {
   align-self: center;
 }
+
 .card__content {
   flex: 1;
 }
@@ -418,6 +412,7 @@ main {
   width: auto;
   min-width: 60px;
 }
+
 .card--six .card__column:last-of-type .card__company {
   animation: cta-morph both linear, color-in both linear;
   animation-timeline: --scroller;
@@ -518,9 +513,11 @@ main {
     rotate: var(--r, 0);
     width: var(--w, 10cqi);
   }
+
   15% {
     rotate: var(--r, 0);
   }
+
   30% {
     rotate: 0deg;
     height: var(--h, 100%);
@@ -536,14 +533,17 @@ main {
 }
 
 @keyframes slide {
+
   0%,
   30% {
     translate: 0 -100cqh;
   }
+
   100% {
     translate: 0 0;
   }
 }
+
 @media (max-width: 414px) {
   :root {
     --entity-size: 20px;
@@ -626,26 +626,35 @@ main {
     max-width: 700px;
   }
 }
+
 body {
   min-height: 100vh;
   font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue",
     Helvetica, Arial, sans-serif, system-ui;
   timeline-scope: --scroller;
   overflow-x: hidden;
-
+  background: linear-gradient(to bottom, #f4ebe8, #080808);
+  color: #f6f0f0;
   display: grid;
-  /* grid-template-rows: 1fr 5rem auto; */
+
   grid-template-areas: "main" "." "footer";
   margin: 0;
-  background: #fcfcfc;
+
+
+  svg {
+    transform: scale(0.7);
+    z-index: 2;
+    pointer-events: none;
+  }
 
   .footer {
     z-index: 15;
-    --footer-background: #ffc6f4;
+    --footer-background: linear-gradient(to bottom, rgb(0, 0, 0), #ffffff);
     display: grid;
     position: relative;
     grid-area: footer;
     min-height: 2rem;
+
     .bubbles {
       position: absolute;
       top: 0;
@@ -654,6 +663,7 @@ body {
       height: 1rem;
       background: var(--footer-background);
       filter: url("#blob");
+
       .bubble {
         position: absolute;
         left: var(--position, 50%);
@@ -664,6 +674,7 @@ body {
         transform: translate(-50%, 100%);
       }
     }
+
     .contenido {
       z-index: 1;
       display: grid;
@@ -671,14 +682,17 @@ body {
       grid-gap: 1rem;
       padding: 1rem;
       background: var(--footer-background);
+
       a,
       p {
-        color: #141618;
+        color: #ededee;
         text-decoration: none;
       }
+
       b {
-        color: white;
+        color: rgb(10, 10, 10);
       }
+
       p {
         margin: 0;
         font-size: 1rem;
@@ -686,16 +700,20 @@ body {
         align-items: center;
         justify-content: center;
       }
-      > div {
+
+      >div {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        > div {
+
+        >div {
           margin: 0.25rem 0;
-          > * {
+
+          >* {
             margin-right: 0.5rem;
           }
         }
+
         .image {
           align-self: center;
           width: 2rem;
@@ -710,24 +728,29 @@ body {
 }
 
 @keyframes bubble-size {
+
   0%,
   75% {
     width: var(--size, 4rem);
     height: var(--size, 4rem);
   }
+
   100% {
     width: 0rem;
     height: 0rem;
   }
 }
+
 @keyframes bubble-move {
   0% {
     bottom: -4rem;
   }
+
   100% {
     bottom: var(--distance, 10rem);
   }
 }
+
 /* Media queries para dispositivos móviles*/
 @media screen and (max-width: 414px) {
   .footer {
@@ -736,6 +759,7 @@ body {
 
   .contenido {
     grid-template-columns: 1fr;
+
     p {
       font-size: 1px;
     }
@@ -748,17 +772,20 @@ h1 {
 
 .flip {
   position: relative;
-  > .front,
-  > .back {
+
+  >.front,
+  >.back {
     display: block;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition-duration: 0.5s;
     transition-property: transform, opacity;
   }
-  > .front {
+
+  >.front {
     transform: rotateY(0deg);
   }
-  > .back {
+
+  >.back {
     position: absolute;
     opacity: 0;
     top: 0px;
@@ -767,24 +794,29 @@ h1 {
     height: 100%;
     transform: rotateY(-180deg);
   }
+
   &:hover {
-    > .front {
+    >.front {
       transform: rotateY(180deg);
     }
-    > .back {
+
+    >.back {
       opacity: 1;
       transform: rotateY(0deg);
     }
   }
+
   &.flip-vertical {
-    > .back {
+    >.back {
       transform: rotateX(-180deg);
     }
+
     &:hover {
-      > .front {
+      >.front {
         transform: rotateX(180deg);
       }
-      > .back {
+
+      >.back {
         transform: rotateX(0deg);
       }
     }
@@ -797,27 +829,29 @@ h1 {
   margin-right: 2px;
   margin-bottom: 1em;
   width: 400px;
-  > .front,
-  > .back {
+
+  >.front,
+  >.back {
     display: block;
     margin: 0;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(7, 7, 7);
     width: inherit;
     background-size: cover !important;
     background-position: center !important;
     height: 220px;
     padding: 1em 2em;
-    background: #313131e1;
+    background: #080808;
     border-radius: 10px;
+
     p {
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 0.9125rem;
       line-height: 200%;
-      color: #999;
+      color: #030202;
     }
   }
 }
@@ -837,13 +871,96 @@ h1 {
 
 @media screen and (max-width: 414px) {
   h1 {
-    font-size: 1em; /* Adjust the font size as needed */
+    font-size: 1em;
+
   }
 
   .flip {
-    width: 100%; /* Make the flip container take up the full width */
-    /* Adjust any other styles as needed */
+    width: 100%;
+
+  }
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1)
   }
 
-  /* Add any other responsive styles as needed */
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
+}
+
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+}
+
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+
+.bgBottom {
+  z-index: 5;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.waveTop {
+  background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.waveMiddle {
+  background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+  background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
 }

@@ -3,7 +3,7 @@ import React from "react";
 const ResponsiveComponent = () => {
   return (
     <div className="contenedor-Flip">
-      <h2>Proyectos</h2>
+      <h2 style={{ color: "black" }}>Proyectos</h2>
       <div className="flip">
         <div
           className="front"

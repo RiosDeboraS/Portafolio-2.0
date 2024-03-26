@@ -1,4 +1,3 @@
-import SizeAvatars from "../contacto/contacto";
 import { Nav } from "../nav/Nav";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -30,6 +29,7 @@ export const Animacion = () => {
             <Nav />
           </div>
         </div>
+
         {/*cartas de contatco*/}
         <div class="sticker">
           <div class="content">
@@ -88,7 +88,7 @@ export const Animacion = () => {
                 </div>
               </div>
               {/* //carta. */}
-              <div class="panel__row">
+              {/* <div class="panel__row">
                 <div class="card card--one">
                   <div class="card__column">
                     <div class="card__avatar">
@@ -104,12 +104,11 @@ export const Animacion = () => {
                     <h3>LinkedIn</h3>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* //carta futuras aqui. */}
             </div>
           </div>
         </div>
-
         <div class="scroller">
           <div class="content">
             <div class="panel"></div>

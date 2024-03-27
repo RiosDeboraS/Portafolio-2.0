@@ -1,5 +1,7 @@
 import React from "react";
 
+import GitHubIcon from "@mui/icons-material/GitHub";
+
 const ResponsiveComponent = () => {
   return (
     <div className="contenedor-Flip">
@@ -21,7 +23,12 @@ const ResponsiveComponent = () => {
           }}
         ></div>
         <div className="back">
-          <h4 style={{ color: "black" }}>NutriMarket</h4>
+          <h3 style={{ color: "black" }}>NutriMarket</h3>
+          <a href="https://github.com/RiosDeboraS">
+            <button>
+              <GitHubIcon></GitHubIcon>
+            </button>
+          </a>
         </div>
         <div
           style={{
@@ -97,7 +104,12 @@ const ResponsiveComponent = () => {
           }}
         ></div>
         <div className="back">
-          <h4 style={{ color: "black" }}>Vorttex Gaming</h4>
+          <h3 style={{ color: "black" }}>Vorttex Gaming</h3>
+          <a href="https://github.com/RiosDeboraS">
+            <button>
+              <GitHubIcon></GitHubIcon>
+            </button>
+          </a>
         </div>
         <div
           style={{
@@ -139,12 +151,16 @@ const ResponsiveComponent = () => {
         <div
           className="front"
           style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)",
+            backgroundImage: "url(/fenix.png)",
           }}
         ></div>
         <div className="back">
-          <h4 style={{ color: "black" }}>Fenix Cell</h4>
+          <h3 style={{ color: "black" }}>Fenix Cell</h3>
+          <a href="https://github.com/RiosDeboraS">
+            <button>
+              <GitHubIcon></GitHubIcon>
+            </button>
+          </a>
         </div>
         <div
           style={{
@@ -174,15 +190,6 @@ const ResponsiveComponent = () => {
             ></img>
             <img
               src="/icons8-siguientejs-48.png"
-              style={{
-                background: "white",
-                width: "50px",
-                height: "50px",
-                margin: "0px",
-              }}
-            ></img>
-            <img
-              src="/icons8-javascript-50.png"
               style={{
                 background: "white",
                 width: "50px",

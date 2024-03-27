@@ -11,7 +11,7 @@
   justify-content: center;
   display: flex;
   align-items: center;
-  color: rgb(2, 2, 2);
+  color: rgb(251, 249, 249);
 }
 
 .p {
@@ -19,7 +19,7 @@
   justify-content: center;
   display: flex;
   align-items: center;
-  color: rgb(2, 2, 2);
+  color: rgb(242, 239, 239);
 }
 
 /* Media query para pantallas de hasta 414px (iPhone XR) */

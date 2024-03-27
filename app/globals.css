@@ -633,7 +633,8 @@ body {
     Helvetica, Arial, sans-serif, system-ui;
   timeline-scope: --scroller;
   overflow-x: hidden;
-  background: linear-gradient(to bottom, #f4ebe8, #080808);
+  /* background: linear-gradient(to bottom, #f4ebe8, #080808); */
+  background-color: #030202;
   color: #f6f0f0;
   display: grid;
 
@@ -772,6 +773,7 @@ h1 {
 
 .flip {
   position: relative;
+  margin: 0px 20px 20px;
 
   >.front,
   >.back {
@@ -826,6 +828,8 @@ h1 {
 .flip {
   position: relative;
   display: inline-block;
+
+  margin: 0px 10px 10px;
   margin-right: 2px;
   margin-bottom: 1em;
   width: 400px;
@@ -836,13 +840,13 @@ h1 {
     margin: 0;
     justify-content: center;
     align-items: center;
-    color: rgb(7, 7, 7);
+    color: rgb(8, 7, 7);
     width: inherit;
     background-size: cover !important;
     background-position: center !important;
     height: 220px;
     padding: 1em 2em;
-    background: #080808;
+    background: #efecec;
     border-radius: 10px;
 
     p {

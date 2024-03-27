@@ -3,37 +3,137 @@ import React from "react";
 const ResponsiveComponent = () => {
   return (
     <div className="contenedor-Flip">
-      <h2 style={{ color: "black" }}>Proyectos</h2>
+      <h2
+        style={{
+          color: "black",
+          justifyContent: "center",
+          alignItems: "center",
+          display: "flex",
+        }}
+      >
+        Proyectos
+      </h2>
       <div className="flip">
         <div
           className="front"
           style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)",
+            backgroundImage: "url(/nutriMarket.png)",
+          }}
+        ></div>
+        <div className="back">
+          <h4 style={{ color: "black" }}>NutriMarket</h4>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          <h1 className="text-shadow">MOUNTAIN</h1>
+          <p>
+            <img
+              src="/icons8-expresar-js-50.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
+            <img
+              src="/icons8-mongo-db-64.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
+            <img
+              src="/icons8-reaccionar-30.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
+            <img
+              src="/icons8-javascript-50.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
+            <img
+              src="/icons8-redux-50.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
+            <img
+              src="/icons8-rápidamente-48.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
+          </p>
         </div>
-        <div className="back">
-          <h4>NutriMarket</h4>
-        </div>
-        <p>js</p>
       </div>
       {/* Otros flip cards aquí */}
       <div className="flip">
         <div
           className="front"
           style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)",
+            backgroundImage: "url(/vortexx.png)",
+          }}
+        ></div>
+        <div className="back">
+          <h4 style={{ color: "black" }}>Vorttex Gaming</h4>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          <h1 className="text-shadow">NutriMarket</h1>
+          <p>
+            <img
+              src="/icons8-siguientejs-48.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
+            <img
+              src="/icons8-prisma-orm-50.png"
+              style={{ background: "white" }}
+            ></img>
+            <img
+              src="/icons8-mecanografiado-50.png"
+              style={{ background: "white" }}
+            ></img>
+            <img
+              src="/icons8-javascript-50.png"
+              style={{ background: "white" }}
+            ></img>
+            <img
+              src="/icons8-postgresql-50.png"
+              style={{ background: "white" }}
+            ></img>
+          </p>
         </div>
-        <div className="back">
-          <h4>NutriMarket</h4>
-        </div>
-        <p>Go</p>
       </div>
       <div className="flip">
         <div
@@ -42,52 +142,66 @@ const ResponsiveComponent = () => {
             backgroundImage:
               "url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)",
           }}
-        >
-          <h1 className="text-shadow">MOUNTAIN</h1>
-        </div>
+        ></div>
         <div className="back">
-          <h4>Angular</h4>
+          <h4 style={{ color: "black" }}>Fenix Cell</h4>
         </div>
-        <p>Go</p>
-      </div>
-      {/* <h4>Vertical Flip</h4>
-      <div className="flip flip-vertical">
         <div
-          className="front"
           style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          <h1 className="text-shadow">FOREST</h1>
-        </div>
-        <div className="back">
-          <h2>Angular</h2>
           <p>
-            Good tools make application development quicker and easier to
-            maintain than if you did everything by hand..
+            <img
+              src="/icons8-siguientejs-48.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
+            <img
+              src="/icons8-logotipo-de-bootstrap-30.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
+            <img
+              src="/icons8-siguientejs-48.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
+            <img
+              src="/icons8-javascript-50.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
+            <img
+              src="/icons8-javascript-50.png"
+              style={{
+                background: "white",
+                width: "50px",
+                height: "50px",
+                margin: "0px",
+              }}
+            ></img>
           </p>
         </div>
       </div>
-
-      <div className="flip flip-vertical">
-        <div
-          className="front"
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)",
-          }}
-        >
-          <h1 className="text-shadow">FOREST</h1>
-        </div>
-        <div className="back">
-          <h2>Angular</h2>
-          <p>
-            Good tools make application development quicker and easier to
-            maintain than if you did everything by hand..
-          </p>
-        </div> 
-      </div>*/}
     </div>
   );
 };
